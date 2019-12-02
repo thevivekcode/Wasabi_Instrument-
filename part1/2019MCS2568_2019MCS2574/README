@@ -1,0 +1,25 @@
+Wasabi
+------
+
+Files:
+
+1) instruction-mix.js -> The javascript files that is used to do analysis on the C file that runs on Wasabi. Details of this file is mentioned in the documentation.
+2) back_wasabi.py -> This python file creates threads=number of CPU cores and runs the c code on Wasabi parallely on the browser. This was helpful to reduce large
+                     execution time of each file in the browser by implementing pipelining. This is done for Question 2,3,4
+3) wasabiCommands.sh -> This shell script is used to execute all the commands namely emcc and wasabi and make the html file ready for execution.
+4) parser.py -> We get raw text as the output from the browser and so we need to parse it for the analysis and plots that need to be done. This python script
+              takes care of the parsing.
+5) back_emcc.py -> This python file is used for Question 1 and calculates time of emcc on chrome and firefox browser and on native gcc. A similar threading to
+                   the file back_wasabi.py is used here to increase the speed of execution.
+                   
+                   
+                   
+Pin
+---
+
+Files:                   
+
+1) inscount0.cpp -> This C++ file contains the logic for counting various kinds of instructions(static and dynamic). This file is used for both experiment 2 and 3.
+2) proccount.cpp -> This C++ file is used to sort the process with maximum call and return the respective instruction count per function used for experiment 4.
+
+Apart from these we created various python scripts to plot graphs using matplotlib.

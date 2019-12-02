@@ -1,0 +1,194 @@
+i32.clz,LZCNT
+i32.ctz,TZCNT
+i32.popcnt,POPCNT
+i32.add,ADD
+i32.sub,SUB
+i32.mul,IMUL
+i32.div_s,IDIV
+i32.div_u,binary
+i32.rem_s,FPREM
+i32.rem_u,FPREM1
+i32.and,AND
+i32.or,OR
+i32.xor,XOR
+i32.shl,SHL
+i32.shr_s,SAR
+i32.shr_u,SHR_U
+i32.rotl,ROL
+i32.rotr,ROR
+i32.eqz,CMP
+i32.eq,CMP
+i32.ne,FICOM
+i32.lt_s,FICOM
+i32.lt_u,FICOM
+i32.gt_s,FICOM
+i32.gt_u,FICOM
+i32.le_s,FICOM
+i32.le_u,FICOM
+i32.ge_s,FICOM
+i32.ge_u,FICOM
+i32.const ,MOV
+i32.wrap_i64,NOP
+i32.trunc_f32_s,CVTTSD2SI 
+i32.trunc_f32_u,VCVTSS2USI
+i32.trunc_f64_s,CVTTSD2SI 
+i32.trunc_f64_u,VCVTSS2USI
+i32.reinterpret_f32,FRNDINT
+i32.reinterpret_f64,FRNDINT
+i64.clz,LZCNT
+i64.ctz,TZCNT
+i64.popcnt,POPCNT
+i64.add,ADD
+i64.sub,SUB
+i64.mul,IMUL
+i64.div_s,IDIV
+i64.div_u,DIV
+i64.rem_s,FPREM
+i64.rem_u,FPREM1
+i64.and,AND
+i64.or,OR
+i64.xor,XOR
+i64.shl,SHL
+i64.shr_s,SAR
+i64.shr_u,SHR
+i64.rotl,ROL
+i64.rotr,ROR
+i64.eqz,CMP
+i64.eq,CMP
+i64.ne,FICOM
+i64.lt_s,FICOM
+i64.lt_u,FICOM
+i64.gt_s,FICOM
+i64.gt_u,FICOM
+i64.le_s,FICOM
+i64.le_u,FICOM
+i64.ge_s,FICOM
+i64.ge_u,FICOM
+i64.const,MOV
+i64.trunc_f32_s,CVTTSD2SI
+i64.trunc_f32_u,VCVTSS2USI
+i64.trunc_f64_s,CVTTSD2SI 
+i64.trunc_f64_u,VCVTSS2USI
+i64.extend_i32_s,EXTEND
+i64.reinterpret_f32,FRNDINT
+i64.reinterpret_f64,FRNDINT
+f32.abs,FABS
+f32.neg,NEG
+f32.sqrt,FSQRT
+f32.ceil,ROUNDPD
+f32.floor,ROUNDPD
+f32.trunc,FRNDINT
+f32.nearest,FRNDINT
+f32.add,FADD
+f32.sub,FSUB 
+f32.mul,FMUL
+f32.div,i32.trunc_f32_u
+f32.min,PMINSW
+f32.max,PMANSW
+f32.copysign,CPYS
+f32.eq,FCOM
+f32.ne,FCOM
+f32.lt,FCOM
+f32.gt,FCOM
+f32.le,FCOM
+f32.ge,FCOM
+f32.const,MOV
+f32.demote_f64,CVTSD2SS
+f32.convert_i32_s,VCVTUSI2SS
+f32.convert_i32_u,VCVTUSI2SD
+f32.convert_i64_s,VCVTUSI2SS
+f32.convert_i64_u,VCVTUSI2SD
+f32.reinterpret_i32,NOP
+f32.reinterpret_i64,NOP
+f64.abs,FABS
+f64.neg,NEG
+f64.sqrt,FSQRT
+f64.ceil,ROUNDPD
+f64.floor,ROUNDPD
+f64.trunc,FRNDINT
+f64.nearest,FRNDINT
+f64.add,FADD
+f64.sub,FSUB
+f64.mul,FMUL
+f64.div,FDIV 
+f64.min,MINSD
+f64.max,MAXSD
+f64.copysign,NOP
+f64.eq,FCOM
+f64.ne,FCOM
+f64.lt,FCOM
+f64.gt,FCOM
+f64.le,FCOM
+f64.ge,FCOM
+f64.const,CONST
+f64.promote_f32,PROMOTE
+f64.convert_i32_s,VCVTUSI2SS
+f64.convert_i32_u,VCVTUSI2SD
+f64.convert_i64_s,VCVTUSI2SS
+f64.convert_i64_u,VCVTUSI2SD
+f64.reinterpret_i32,NOP
+f64.reinterpret_i64,NOP
+local.get,MOV
+global.get,GET
+global.set,SET
+local.tee,TEE
+nop,NOP
+unreachable,UD2
+block ,BEGIN
+loop,LOOP label
+if ,JMP
+else,JMP
+br,JMP
+br_if,JRCXZ
+br_table,JRCKZ
+return,RET
+end,END
+call,CALL
+call_indirect,CALLQ
+drop,DROP
+select,"CMP j3,00  JE j1 ELSE j2"
+memory.size,SIZE
+memory.grow,GROW
+i32.load,MOV
+i32.load align,MOV
+i32.load8_s offset,MOV
+i32.load8_s align,MOV
+i32.load8_u offset,MOV
+i32.load8_u align,MOV
+i32.load16_s offset,MOV
+i32.load16_s align,MOV
+i32.load16_u offset,MOV
+i32.load16_u align,MOV
+i32.store,MOV
+i32.store align,MOV
+i32.store8_s offset,MOV
+i32.store8_s align,MOV
+i32.store8_u offset,MOV
+i32.store8_u align,MOV
+i32.store16_s offset,MOV
+i32.store16_s align,MOV
+i32.store16_u offset,MOV
+i32.store16_u align,MOV
+i64.load offset,MOV
+i64.load align,MOV
+i64.store offset,MOV
+i64.store align,MOV
+i64.load32_s offset,MOV
+i64.load32_s align,MOV
+i64.load32_u offset,MOV
+i64.load32_u align,MOV
+i64.store32 offset,MOV
+i64.store32 align,MOV
+f32.load offset,MOV
+f32.load align,MOV
+f32.store offset,MOV
+f32.store align,MOV
+f64.load offset,MOV
+f64.load align,MOV
+f64.store offset,MOV
+f64.store align,MOV
+local.set,MOV
+i32.const ,EQU
+i64.const,EQU
+f32.const,EQU
+f64.const,EQU
